@@ -15,7 +15,6 @@ const LoginForm: React.FC = () => {
   const handleSubmit = async () => {
     try {
       const result = await login({ email, password })
-      console.log(result)
       ls.set('_tokens', result)
     } catch (err) {
       console.error(err)
