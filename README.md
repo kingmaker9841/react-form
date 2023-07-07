@@ -1,4 +1,4 @@
-### Note: You need node version >=16&
+### Note: You need node version >= 16
 
 ### `yarn start`
 
