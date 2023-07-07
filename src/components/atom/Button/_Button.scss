@@ -1,0 +1,20 @@
+$input-border-color: #ccc;
+$input-transition-duration: 0.5s;
+$input-transition-delay: 0s;
+
+.button-container {
+  text-align: center;
+  button {
+    padding: 12px 18px;
+    background-color: theme-color('primary');
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all $input-transition-duration $input-transition-delay;
+
+    &:hover {
+      background-color: theme-color('active');
+      transition: all $input-transition-duration $input-transition-delay;
+    }
+  }
+}

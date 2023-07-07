@@ -1,0 +1,23 @@
+$color-primary: #390179;
+$info-color: #1a63f4;
+$success-color: #4c9610;
+$error-color: #db312b;
+$highlight-color: #fb434a;
+$warning-color: #e07408;
+$text-color-primary: #564d6d;
+$text-color-active: #3d3358;
+
+$theme-color: (
+  primary: $color-primary,
+  info: $info-color,
+  success: $success-color,
+  error: $error-color,
+  highlight: $highlight-color,
+  warning: $warning-color,
+  text: $text-color-primary,
+  text-active: $text-color-active,
+);
+
+@function theme-color($key) {
+  @return map-get($theme-color, $key);
+}

@@ -1,0 +1,34 @@
+$input-border-color: #ccc;
+$input-transition-duration: 0.5s;
+$input-transition-delay: 0s;
+
+.input-container {
+  .label-container {
+    margin-bottom: 12px;
+  }
+
+  .input-required {
+    color: theme-color('error');
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid $input-border-color;
+    padding: 10px 15px;
+    transition: border-color $input-transition-duration $input-transition-delay;
+
+    &:hover {
+      border-color: theme-color('primary');
+      box-shadow: 0 0 2px theme-color('primary');
+      transition: border-color $input-transition-duration $input-transition-delay;
+    }
+
+    &:focus {
+      border-color: theme-color('primary');
+      box-shadow: 0 0 5px theme-color('primary');
+      outline: none;
+    }
+  }
+}
